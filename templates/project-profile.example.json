@@ -1,0 +1,41 @@
+{
+  "profileSchemaVersion": 1,
+  "orchestratorProtocolVersion": 1,
+  "project": {
+    "id": "example-project",
+    "name": "Example Project",
+    "repositoryFullName": "owner/repository",
+    "remoteUrl": "https://github.com/owner/repository.git",
+    "authoritativeBranch": "main",
+    "localRepositoryPath": "C:\\Projects\\example-project"
+  },
+  "runtime": {
+    "stateDirectory": "C:\\Orchestrator-Watcher\\state\\example-project",
+    "worktreeRoot": "C:\\Orchestrator-Watcher\\worktrees\\example-project",
+    "resultRoot": "C:\\Orchestrator-Watcher\\results\\example-project",
+    "pollIntervalSeconds": 2.0
+  },
+  "executor": {
+    "logicalSessionId": "REPLACE_ME",
+    "bootstrapPath": "projects/example-project/PROJECT_EXECUTOR_BOOTSTRAP.md"
+  },
+  "architect": {
+    "browserEndpoint": "http://127.0.0.1:9333",
+    "conversationId": "REPLACE_ME",
+    "bootstrapPath": "projects/example-project/PROJECT_ARCHITECT_BOOTSTRAP.md",
+    "memoryThresholdBytes": 1073741824
+  },
+  "governance": {
+    "finalHumanAuthority": "REPLACE_ME",
+    "currentStateDocument": "docs/CURRENT_STATE.md",
+    "architectureDocument": "docs/ARCHITECTURE.md",
+    "workflowDocument": "docs/AGENT_WORKFLOW.md",
+    "handoverDocument": "docs/HANDOVER.md",
+    "protectedAreasDocument": "docs/PROTECTED_AREAS.md",
+    "validationDocument": "docs/VALIDATION.md"
+  },
+  "adapters": {
+    "applicationValidation": null,
+    "browserValidation": null
+  }
+}
