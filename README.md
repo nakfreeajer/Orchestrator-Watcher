@@ -98,6 +98,35 @@ The Project Architect uses the completed task ID. The Orchestrator allocates the
 
 Ordinary discussion is not machine execution authority.
 
+## Production reference extraction
+
+The universal design is being extracted from the production-mature AFFOTECH Local Orchestrator reference implementation without importing AFFOTECH business/project identity.
+
+The accepted reference runtime checkpoint used for extraction is:
+
+`57a3a914b35ed0c715aaaf0267ed0bd36a39cc78`
+
+What is preserved:
+
+- state-machine semantics;
+- exactly-once result transport and reconciliation;
+- restart/recovery behavior;
+- resident human-decision waiting;
+- discussion-pause semantics;
+- browser/session ownership lessons;
+- non-preemptive rollover principle;
+- Project Architect / Orchestrator / Executor authority separation;
+- production qualification lessons.
+
+What is not copied into the generic core:
+
+- AFFOTECH repository/branch/path identity;
+- AFFOTECH Executor session and Architect conversation IDs;
+- tenant/business rules;
+- AFFOTECH-specific bootstrap/governance;
+- workstation-specific paths;
+- project-specific validation assumptions.
+
 ## Repository direction
 
 This repository is intentionally independent from any one software project. Project-specific identities such as repository paths, branches, Executor sessions, Architect conversations, validation rules, and governance belong in a **project profile** and project-owned bootstrap/governance files.
@@ -110,6 +139,11 @@ See:
 - `docs/ARCHITECTURE.md`
 - `docs/PROTOCOL.md`
 - `docs/NEW_PROJECT_SETUP.md`
+- `docs/REFERENCE_IMPLEMENTATION_EXTRACTION.md`
+- `docs/RECOVERY_RUNBOOK.md`
+- `docs/PRODUCTION_LESSONS.md`
+- `docs/QUALIFICATION.md`
+- `docs/UNIVERSALIZATION_BACKLOG.md`
 - `templates/PROJECT_ARCHITECT_BOOTSTRAP.md`
 - `templates/PROJECT_EXECUTOR_BOOTSTRAP.md`
 - `templates/project-profile.example.json`
